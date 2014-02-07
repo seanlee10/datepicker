@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html ng-app="myApp">
+<head>
+  <title>Datepicker</title>
+  <script type="text/javascript" src="js/angular.js"></script>
+  <script type="text/javascript" src="js/ui-bootstrap-tpls-0.7.0.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <link ref="" href="">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body ng-controller="myController">
+  <input type="text" ng-model="date" class="form-control" ng-change="update('date')" datepicker-popup="yyyy-MM-dd" is-open="opened1" min="minDate" max="'2015-06-22'" show-weeks="false" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" close-text="Close" placeholder="Date" readonly>
+</body>
+
+</html>
